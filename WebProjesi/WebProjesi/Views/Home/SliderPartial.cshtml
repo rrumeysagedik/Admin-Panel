@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WebProjesi.Models.Model.Slider>
+@{
+    Layout = null;
+}
+<div id="slider" class="flexslider">
+
+    <ul class="slides">
+        @foreach (var item in Model)
+        {
+            <li>
+
+                <img src="@item.ResimURL" alt="@item.Baslik">
+                <div class="caption">
+                    @*<h2><span>an awesome website</span></h2>*@
+                    <h2><span>@item.Baslik</span></h2>
+                    <p>@item.Aciklama</p>
+
+                    <button class="btn">Devamını Oku</button>
+                </div>
+
+            </li>
+        }
+    </ul>
+
+</div>

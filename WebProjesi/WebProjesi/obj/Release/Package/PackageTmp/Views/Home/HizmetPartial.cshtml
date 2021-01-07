@@ -1,0 +1,135 @@
+﻿@model IEnumerable<WebProjesi.Models.Model.Hizmet>
+
+<div id="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3">
+              
+                
+                    <div class="service-heading">
+                        <h2>Hizmetlerim</h2>
+                        <p>
+                          
+                        </p>
+                    </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <!--services wrapper-->
+    <section class="services-style-one">
+        <div class="outer-box clearfix">
+
+            <div class="services-column">
+                <div class="content-outer">
+                    <div class="row clearfix">
+                        @foreach (var item in Model)
+                        {
+                            <div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="icon-box"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                                    <h4>@item.Baslik</h4>
+                                    <div class="text">
+                                       @item.Aciklama
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        @*<div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="inner-box">
+                <div class="icon-box"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                <h4>FINANCIAL PLANNING</h4>
+                <div class="text">
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                </div>
+            </div>
+        </div>
+
+        <div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="inner-box">
+                <div class="icon-box"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+                <h4>BUSINESS PLANNING</h4>
+                <div class="text">
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                </div>
+            </div>
+        </div>*@
+
+
+
+                        @*<div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="inner-box">
+                <div class="icon-box"><i class="fa fa-bullhorn" aria-hidden="true"></i></div>
+                <h4>MORTGAGE ADVISOR</h4>
+                <div class="text">
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                </div>
+            </div>
+        </div>
+
+        <div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="inner-box">
+                <div class="icon-box"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                <h4>RETIREMENT PLANNING</h4>
+                <div class="text">
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                </div>
+            </div>
+        </div>
+
+        <div class="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="inner-box">
+                <div class="icon-box"><i class="fa fa-money" aria-hidden="true"></i></div>
+                <h4>SAVING AND INVESTING</h4>
+                <div class="text">
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                </div>
+            </div>
+        </div>*@
+                    </div>
+                </div>
+            </div>
+
+            <!--Content Column-->
+            <div class="content-column clearfix">
+                <div class="content-box">
+                    <div class="inner-box">
+                        <!--Section Title-->
+                        <div class="sec-title aligned-right">
+                            <h2>Daima Çalış<span>kanlığa..</span></h2>
+                        </div>
+                        <div class="text">
+                            Bütün güzellikler zorluklardan doğar hizmet etmeye önce kendi geleceğimize hizmet ederek başlayabiliriz.
+                       
+                        @*<button class="btn">learn more</button>*@
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--service gapping-->
+    <div class="service-footer hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="service-footer-left">
+                        <h3>İhtiyaçlarımız <span>Azim ve</span>Çalışkanlık..</h3>
+                        <p>Azim ve çalışkanlık bütün güzel sonuçların ana kaynağıdır..</p>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="service-footer-right">
+                        @*<button class="btn">book now</button>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
